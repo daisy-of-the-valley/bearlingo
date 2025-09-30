@@ -2,7 +2,108 @@
   "hash": "8b9ea41f",
   "configHash": "fbd6dc56",
   "lockfileHash": "e221a2e0",
-  "browserHash": "3465caca",
-  "optimized": {},
-  "chunks": {}
+  "browserHash": "36640308",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "872b2d75",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "bdcd7e81",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "03dd5530",
+      "needsInterop": false
+    },
+    "react-hot-toast": {
+      "src": "../../node_modules/react-hot-toast/dist/index.mjs",
+      "file": "react-hot-toast.js",
+      "fileHash": "2b6e6032",
+      "needsInterop": false
+    },
+    "daisyui": {
+      "src": "../../node_modules/daisyui/src/index.js",
+      "file": "daisyui.js",
+      "fileHash": "a3002034",
+      "needsInterop": true
+    },
+    "react-router": {
+      "src": "../../node_modules/react-router/dist/development/index.mjs",
+      "file": "react-router.js",
+      "fileHash": "8704dcb1",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "e424c135",
+      "needsInterop": false
+    },
+    "gsap": {
+      "src": "../../node_modules/gsap/index.js",
+      "file": "gsap.js",
+      "fileHash": "ae22cc94",
+      "needsInterop": false
+    },
+    "flowbite-react": {
+      "src": "../../node_modules/flowbite-react/dist/index.js",
+      "file": "flowbite-react.js",
+      "fileHash": "f247de6b",
+      "needsInterop": false
+    },
+    "zustand": {
+      "src": "../../node_modules/zustand/esm/index.mjs",
+      "file": "zustand.js",
+      "fileHash": "e4a19d44",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "ebafc783",
+      "needsInterop": false
+    },
+    "react-icons/ai": {
+      "src": "../../node_modules/react-icons/ai/index.mjs",
+      "file": "react-icons_ai.js",
+      "fileHash": "4fe716ff",
+      "needsInterop": false
+    },
+    "gsap/Draggable": {
+      "src": "../../node_modules/gsap/Draggable.js",
+      "file": "gsap_Draggable.js",
+      "fileHash": "1358eadb",
+      "needsInterop": false
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "c994c7b5",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-3CFN54IQ": {
+      "file": "chunk-3CFN54IQ.js"
+    },
+    "chunk-FYGYNQUM": {
+      "file": "chunk-FYGYNQUM.js"
+    },
+    "chunk-SGLBH52P": {
+      "file": "chunk-SGLBH52P.js"
+    },
+    "chunk-32EALFBN": {
+      "file": "chunk-32EALFBN.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
 }
