@@ -18,8 +18,8 @@ import "./config/passport.js";
 
 const app = express();
 const allowedOrigins = [
-  "http://localhost:5173/",              // local dev
-  "https://bearlingo.vercel.app/"    // deployed frontend
+  "http://localhost:5173",              // local dev
+  "https://bearlingo.vercel.app"    // deployed frontend
 ];
 
 // Middleware
