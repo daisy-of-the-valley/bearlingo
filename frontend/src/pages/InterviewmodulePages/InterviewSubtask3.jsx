@@ -160,9 +160,9 @@ const InterviewSubtask3 = ({ isSubmitted, setIsSubmitted, onClose, onTaskComplet
   return (
   <div className="flex flex-col h-full">
     {/* Sticky white header (close only) */}
-    <header className="sticky top-0 z-40 bg-white">
+    <header className="sticky top-0 z-40 bg-white rounded-2xl">
       <div className="mx-auto max-w-[880px] px-4 py-3 grid grid-cols-[auto_1fr_auto] items-center">
-        <div className="min-w-[60px]"/><div/>
+        <div className="min-w-[60px] "/><div/>
         <button
           onClick={handleLocalClose}
           className="text-gray-400 hover:text-gray-600 text-xl"

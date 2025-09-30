@@ -235,7 +235,7 @@ const InterviewModule = () => {
   return (
     <div className="flex flex-col min-h-screen relative overflow-hidden">
       {/* Top Navbar */}
-      <div className="relative z-[100] bg-[#deffbd]">
+      <div className="relative bg-[#deffbd]">
         <TopNavbar />
       </div>
 

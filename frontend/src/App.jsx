@@ -13,6 +13,7 @@ import Journal from './pages/Journal';
 import Test1 from './pages/Journal-redone'
 import InterviewModule from './pages/InterviewmodulePages/InterviewModule';
 import NetworkingModule from './pages/NetworkingModulePages/NetworkingModule';
+import ComingSoon from './pages/ComingSoon';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -29,10 +30,10 @@ const App = () => {
         <Route path="/Getting Started" element={<FirstTimePg2 />} />
         <Route path="/First Level" element={<FirstTimePg3 />} />
         <Route path="/Leaderboard" element={<Leaderboard />} />
-        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Profile" element={<ComingSoonProfile />} />
         <Route path="/Journal" element={<Journal />} />
         <Route path="/test" element={<Test1 />} />
-        <Route path="/NetworkingModule" element={<NetworkingModule />} />
+        <Route path="/NetworkingModule" element={<ComingSoon />} />
       </Routes>
     </div>
   )
