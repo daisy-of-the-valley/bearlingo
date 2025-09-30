@@ -59,6 +59,8 @@ const Home = () => {
         </footer>
       </div>
     </div>
+
+    // SEND HELP
   );
 };
 
