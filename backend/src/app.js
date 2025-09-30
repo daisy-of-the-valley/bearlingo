@@ -18,18 +18,24 @@ import "./config/passport.js";
 
 const app = express();
 const allowedOrigins = [
-  "http://localhost:5173",              // local dev
-  "https://bearlingo.vercel.app"    // deployed frontend
+  "http://localhost:5173/",              // local dev
+  "https://bearlingo.vercel.app/"    // deployed frontend
 ];
 
 // Middleware
+app.use(cors({
+  origin: allowedOrigins, // exact Vercel URL
+  credentials: true,                             // <— MUST
+  methods: ["GET","POST","PUT","PATCH","DELETE","OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // Parse form data into a JavaScript object and store it in req.body
 app.use(cookieParser()); // Parse req.cookies into a JSON object
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true
-})); // uses cors middleware package,  any frontend on any domain can access your API
+// app.use(cors({
+//   origin: allowedOrigins,
+//   credentials: true
+// })); // uses cors middleware package,  any frontend on any domain can access your API
 // Logging info with morgan middleware
 app.use(morgan("dev"));
 
