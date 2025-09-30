@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import AuthSuccess from './pages/AuthSuccess';
+import CvModule from './pages/CVmodulePages/CVModule';
+import FirstTimePg1 from './pages/FirstTimePages/FirstTimePg1';
+import FirstTimePg2 from './pages/FirstTimePages/FirstTimePg2';
+import FirstTimePg3 from './pages/FirstTimePages/FirstTimePg3';
+import Leaderboard from './pages/Leaderboard';
+import Profile from './pages/Profile';
+import Journal from './pages/Journal';
+import Test1 from './pages/Journal-redone'
+import InterviewModule from './pages/InterviewmodulePages/InterviewModule';
+import NetworkingModule from './pages/NetworkingModulePages/NetworkingModule';
+import { Routes, Route } from 'react-router-dom';
+import ComingSoon from './ComingSoon';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div data-theme="lemonade">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/auth-success" element={<AuthSuccess />} />
+        <Route path="/CvModule" element={<CvModule />} />
+        <Route path="/InterviewModule" element={<InterviewModule />} />
+        <Route path="/Welcome" element={<FirstTimePg1 />} />
+        <Route path="/Getting Started" element={<FirstTimePg2 />} />
+        <Route path="/First Level" element={<FirstTimePg3 />} />
+        <Route path="/Leaderboard" element={<Leaderboard />} />
+        <Route path="/Profile" element={<ComingSoon />} />
+        <Route path="/Journal" element={<Journal />} />
+        <Route path="/test" element={<Test1 />} />
+        <Route path="/NetworkingModule" element={<ComingSoon />} />
+      </Routes>
+    </div>
   )
 }
 
-export default App
+export default App;
